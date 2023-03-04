@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { PrimeiraPaginaComponent } from './primeira-pagina/primeira-pagina.component';
@@ -8,6 +7,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
+import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,13 +18,16 @@ AppComponent,
 PrimeiraPaginaComponent,
 SegundaPaginaComponent,
 PaginaNaoEncontradaComponent,
-PaginaComParametrosComponent
+PaginaComParametrosComponent,
+PaginaProtegidaComponent,
+LoginComponent
 ],
 imports: [
 
 AppRoutingModule,
 RouterModule,
-BrowserModule
+BrowserModule,
+FormsModule
 
 
 ],
